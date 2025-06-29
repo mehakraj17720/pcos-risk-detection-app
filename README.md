@@ -7,23 +7,15 @@ A machine learning web application that predicts the risk of PCOS (Polycystic Ov
 ## 🌟 Features
 - Takes health-related inputs from the user
 - Predicts whether the user is at risk of PCOS
+- Displays precautionary tips based on the result
+- Shows the nearest gynecologist using Google Maps
 - Trained using models like Logistic Regression, Decision Tree, SVM, etc.
 - Clean web interface built with HTML & CSS
 
+
 ---
 
-## 📁 Project Structure
-
-pcos-risk-detection-app/
-├── app.py # Main Flask app
-├── predict.py # Risk prediction logic
-├── model_train.py # Model training script
-├── requirements.txt # Python dependencies
-├── templates/ # HTML files (index, result, etc.)
-├── static/ # CSS, images, etc.
-├── models/ # Trained ML model (.pkl)
-└── data/ # Dataset used for training
-
+<pre> ## 📁 Project Structure ```text pcos-risk-detection-app/ ├── app.py # Main Flask app ├── predict.py # Risk prediction logic ├── model_train.py # Model training script ├── requirements.txt # Python dependencies ├── templates/ # HTML files (index, result, etc.) ├── static/ # CSS, images, etc. ├── models/ # Trained ML model (.pkl) └── data/ # Dataset used for training ``` </pre>
 
 ---
 
