@@ -54,4 +54,7 @@ Open your browser and go to:
 
 
 
+## 🖼 Preview
+
+![App Screenshot](pcos-preview.png)
 
