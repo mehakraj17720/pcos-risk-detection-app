@@ -14,8 +14,21 @@ A machine learning web application that predicts the risk of PCOS (Polycystic Ov
 
 
 ---
+## 📁 Project Structure
 
-<pre> ## 📁 Project Structure ```text pcos-risk-detection-app/ ├── app.py # Main Flask app ├── predict.py # Risk prediction logic ├── model_train.py # Model training script ├── requirements.txt # Python dependencies ├── templates/ # HTML files (index, result, etc.) ├── static/ # CSS, images, etc. ├── models/ # Trained ML model (.pkl) └── data/ # Dataset used for training ``` </pre>
+```text
+pcos-risk-detection-app/
+├── app.py               # Main Flask app
+├── predict.py           # Risk prediction logic
+├── model_train.py       # Model training script
+├── requirements.txt     # Python dependencies
+├── templates/           # HTML files (index, result, etc.)
+├── static/              # CSS, images, etc.
+├── models/              # Trained ML model (.pkl)
+└── data/                # Dataset used for training
+```
+
+
 
 ---
 
