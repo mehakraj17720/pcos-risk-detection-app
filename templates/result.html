@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/static/bgimage.avif') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .result-container {
+            background: rgba(255, 255, 255, 0.6); /* Optional: semi-transparent background */
+            padding: 40px;
+            border-radius: 20px;
+        }
+        .prediction-text {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 30px;
+        }
+        .positive {
+            font-size: 70px;
+            font-weight: bold;
+            color: red;
+            margin-top: 20px;
+        }
+        .negative {
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+        }
+        .subtext {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+        .emoji {
+            font-size: 80px;
+        }
+        .btn {
+            font-size: 30px;
+            padding: 10px 20px;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <p class="prediction-text">Prediction Result:</p>
+        {% if prediction == "Positive for PCOS" %}
+            <p class="positive">{{ prediction }}</p>
+            <p class="subtext">(There are chances of PCOS)</p>
+            <p class="emoji">😞</p>
+            <a href="/cure"><button class="btn">Click for PCOS Management</button></a>
+        {% else %}
+            <p class="negative">{{ prediction }}</p>
+            <p class="subtext">(PCOS unlikely)</p>
+            <p class="emoji">😊</p>
+        {% endif %}
+    </div>
+</body>
+</html>
